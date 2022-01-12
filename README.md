@@ -4,8 +4,8 @@
 
  - [Inspiration App UI & Animation](#inspiration-app)
  - [Trip App UI & Animation](#trip-app)
- - [Food Delivery App UI & Animation](#day-3-flutter)
- - [Useer Profile UI & Animation](#day-4-flutter)
+ - [Actors Profile UI & Animation](#day-3-flutter)
+ - [Food Delivery App UI & Animation](#day-4-flutter)
  - [Ripple Animation](#day-5-flutter)
  - [Page Transition Animation](#day-6-flutter)
  - [Download Button with Animation](#day-7-flutter)
