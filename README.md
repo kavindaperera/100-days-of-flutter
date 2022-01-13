@@ -32,3 +32,12 @@
   <img src="flutter_trip_app/screenshots/one.png" alt="first" width="150"/>
   <img src="flutter_trip_app/screenshots/two.png" alt="two" width="150"/>
 </div>
+
+### Actors Profile
+
+#### `Day 03`
+
+<div align="start">
+  <img src="actors_profile/screenshots/one.png" alt="first" width="150"/>
+  <img src="actors_profile/screenshots/two.png" alt="two" width="150"/>
+</div>

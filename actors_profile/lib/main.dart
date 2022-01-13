@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: HomePage(),
       ),
     );
@@ -25,11 +26,13 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: <Widget>[
           CustomScrollView(
+            physics: BouncingScrollPhysics(),
             slivers: <Widget>[
               SliverAppBar(
                 expandedHeight: 500,
                 backgroundColor: Colors.black,
                 flexibleSpace: FlexibleSpaceBar(
+                  collapseMode: CollapseMode.pin,
                   background: Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
@@ -183,6 +186,24 @@ class _HomePageState extends State<HomePage> {
                           SizedBox(
                             height: 20,
                           ),
+                          FadeAnimation(
+                            1.8,
+                            Container(
+                              height: 200,
+                              child: ListView(
+                                physics: BouncingScrollPhysics(),
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  makeVideo(image: 'assets/images/lily_1.jpg'),
+                                  makeVideo(image: 'assets/images/lily_2.jpg'),
+                                  makeVideo(image: 'assets/images/lily_3.jpg'),
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 120,
+                          )
                         ],
                       ),
                     ),
@@ -190,8 +211,70 @@ class _HomePageState extends State<HomePage> {
                 ),
               )
             ],
+          ),
+          Positioned.fill(
+            bottom: 50,
+            child: Container(
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: FadeAnimation(
+                  2,
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 30),
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.yellow[700],
+                    ),
+                    child: Align(
+                      child: Text(
+                        'Subscribe',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           )
         ],
+      ),
+    );
+  }
+
+  Widget makeVideo({image}) {
+    return AspectRatio(
+      aspectRatio: 1.5 / 1,
+      child: Container(
+        margin: EdgeInsets.only(right: 20.0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          image: DecorationImage(
+            image: AssetImage(image),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.bottomRight,
+              colors: [
+                Colors.black.withOpacity(.9),
+                Colors.black.withOpacity(.2),
+              ],
+            ),
+          ),
+          child: Align(
+            child: Icon(
+              Icons.play_arrow,
+              color: Colors.white,
+              size: 70.0,
+            ),
+          ),
+        ),
       ),
     );
   }
