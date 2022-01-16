@@ -4,7 +4,7 @@
 
  - [Inspiration App UI & Animation](#inspiration-app)
  - [Trip App UI & Animation](#trip-app)
- - [Actors Profile UI & Animation](#day-3-flutter)
+ - [Actors Profile UI & Animation](#actors-profile)
  - [Food Delivery App UI & Animation](#day-4-flutter)
  - [Ripple Animation](#day-5-flutter)
  - [Page Transition Animation](#day-6-flutter)
@@ -15,7 +15,7 @@
  - [Travel App UI & Animation](#day-11-flutter)
  - [Login Page UI & Animation](#day-12-flutter)
  
-### Inspiration App
+### [Inspiration App](https://github.com/kavindaperera/100-days-of-flutter/tree/main/flutter_inspiration_app)
 
 #### `Day 01`
 
@@ -24,7 +24,7 @@
   <img src="flutter_inspiration_app/screenshots/two.png" alt="two" width="150"/>
 </div>
 
-### Trip App
+### [Trip App](https://github.com/kavindaperera/100-days-of-flutter/tree/main/flutter_trip_app)
 
 #### `Day 02`
 
@@ -33,7 +33,7 @@
   <img src="flutter_trip_app/screenshots/two.png" alt="two" width="150"/>
 </div>
 
-### Actors Profile
+### [Actors Profile](https://github.com/kavindaperera/100-days-of-flutter/tree/main/actors_profile)
 
 #### `Day 03`
 
